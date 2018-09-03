@@ -53,6 +53,8 @@ flutter:
     - assets/images/jonokontho.png
     - assets/images/bangladeshJounrnal.png
     - assets/images/launch.svg
+    - assets/images/thedailyStar.png
+    - assets/images/theFinanceEx.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -220,6 +220,14 @@ class WidgetGroup {
         newsPaperName: "Bd-journal",
         url: "http://www.bd-journal.com/",
         iconLocation: "assets/images/bangladeshJounrnal.png"),
+        DataNewsPaper(
+        newsPaperName: "The Daily Star",
+        url: "https://www.thedailystar.net/",
+        iconLocation: "assets/images/thedailyStar.png"),
+        DataNewsPaper(
+        newsPaperName: "The Financial Express ",
+        url: "http://thefinancialexpress.com.bd/",
+        iconLocation: "assets/images/theFinanceEx.png"),
   ];
 
   Widget circleImage(String newtworkImageLink) {
@@ -255,13 +263,13 @@ class WidgetGroup {
                 );
               })),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
+              // you can not wrap Circular image's initial parent container which set the hight and width of the circular image widget
               circleImage(data.iconLocation),
-              Container(
-                width: 221.0,
-                child: Padding(
-                  padding: EdgeInsets.only(left: 0.0),
+              Expanded(
+                flex: 2,
+                  child: Padding(
+                  padding: EdgeInsets.only(left: 20.0),
                   child: Text(
                     "${data.newsPaperName}",
                     style: TextStyle(
@@ -271,10 +279,7 @@ class WidgetGroup {
                   ),
                 ),
               ),
-              Container(
-                  width: 50.0,
-                  padding: EdgeInsets.only(left: 0.0),
-                  child: Icon(Icons.launch))
+              Expanded(child: Icon(Icons.launch))
             ],
           ),
         ),
