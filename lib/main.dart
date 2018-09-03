@@ -220,11 +220,11 @@ class WidgetGroup {
         newsPaperName: "Bd-journal",
         url: "http://www.bd-journal.com/",
         iconLocation: "assets/images/bangladeshJounrnal.png"),
-        DataNewsPaper(
+    DataNewsPaper(
         newsPaperName: "The Daily Star",
         url: "https://www.thedailystar.net/",
         iconLocation: "assets/images/thedailyStar.png"),
-        DataNewsPaper(
+    DataNewsPaper(
         newsPaperName: "The Financial Express ",
         url: "http://thefinancialexpress.com.bd/",
         iconLocation: "assets/images/theFinanceEx.png"),
